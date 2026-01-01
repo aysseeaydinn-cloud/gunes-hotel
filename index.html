@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güneş Hotel - Mount Nemrut</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dil Seçim Modal -->
+    <div id="languageModal" class="language-modal">
+        <div class="language-content">
+            <h2>Dil Seçiniz / Choose Language / Scegli Lingua</h2>
+            <div class="language-buttons">
+                <button class="lang-btn" data-lang="tr">
+                    <span>🇹🇷</span>
+                    <span>Türkçe</span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span>🇬🇧</span>
+                    <span>English</span>
+                </button>
+                <button class="lang-btn" data-lang="it">
+                    <span>🇮🇹</span>
+                    <span>Italiano</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-main">GÜNEŞ</span>
+                    <span class="logo-sub">HOTEL</span>
+                </div>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-tr="Ana Sayfa" data-en="Home" data-it="Home">Ana Sayfa</a></li>
+                <li><a href="#about" data-tr="Hakkımızda" data-en="About Us" data-it="Chi Siamo">Hakkımızda</a></li>
+                <li><a href="#rooms" data-tr="Odalar" data-en="Rooms" data-it="Camere">Odalar</a></li>
+                <li><a href="#gallery" data-tr="Galeri" data-en="Gallery" data-it="Galleria">Galeri</a></li>
+                <li><a href="#contact" data-tr="İletişim" data-en="Contact" data-it="Contatto">İletişim</a></li>
+                
+                <li class="language-selector">
+                    <div class="current-lang" id="currentLang">
+                        <span id="currentLangFlag">🇹🇷</span>
+                        <span id="currentLangText">TR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <div class="lang-option" data-lang="tr">
+                            <span>🇹🇷</span>
+                            <span>Türkçe</span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <span>🇬🇧</span>
+                            <span>English</span>
+                        </div>
+                        <div class="lang-option" data-lang="it">
+                            <span>🇮🇹</span>
+                            <span>Italiano</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('img/slide-1.jpg')">
+                <div class="slide-content">
+                    <h1 data-tr="Nemrut Dağı'nın Eteklerinde Eşsiz Deneyim" data-en="Unique Experience at the Foot of Mount Nemrut" data-it="Esperienza unica ai piedi del Monte Nemrut">Nemrut Dağı'nın Eteklerinde Eşsiz Deneyim</h1>
+                    <p data-tr="UNESCO Dünya Mirası'na sadece 2 km mesafede, konforlu konaklama" data-en="Comfortable accommodation just 2 km from the UNESCO World Heritage Site" data-it="Alloggi confortevoli a soli 2 km dal Sito Patrimonio UNESCO">UNESCO Dünya Mirası'na sadece 2 km mesafede, konforlu konaklama</p>
+                    <div class="hero-buttons">
+                        <a href="#rooms" class="btn" data-tr="Odalarımızı İnceleyin" data-en="View Our Rooms" data-it="Guarda le nostre camere">Odalarımızı İnceleyin</a>
+                        <a href="#contact" class="btn btn-outline" data-tr="Rezervasyon" data-en="Reservation" data-it="Prenotazione">Rezervasyon</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: url('img/slide-2.jpg')">
+                <div class="slide-content">
+                    <h1 data-tr="Tarihi ve Doğal Güzelliklerin Buluştuğu Yer" data-en="Where History and Nature Meet" data-it="Dove storia e natura si incontrano">Tarihi ve Doğal Güzelliklerin Buluştuğu Yer</h1>
+                    <p data-tr="Gün doğumu ve gün batımının büyüleyici manzaraları" data-en="Enchanting sunrise and sunset views" data-it="Affascinanti viste di alba e tramonto">Gün doğumu ve gün batımının büyüleyici manzaraları</p>
+                    <div class="hero-buttons">
+                        <a href="#gallery" class="btn" data-tr="Galeriyi Görün" data-en="View Gallery" data-it="Vedi galleria">Galeriyi Görün</a>
+                        <a href="#about" class="btn btn-outline" data-tr="Hakkımızda" data-en="About Us" data-it="Chi Siamo">Hakkımızda</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: url('img/slide-3.jpg')">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-tr="Hakkımızda" data-en="About Us" data-it="Chi Siamo">Hakkımızda</h2>
+                <p data-tr="Nemrut Dağı'nın büyüleyici atmosferinde hizmet veren otelimiz" data-en="Our hotel serving in the captivating atmosphere of Mount Nemrut" data-it="Il nostro hotel che opera nella suggestiva atmosfera del Monte Nemrut">Nemrut Dağı'nın büyüleyici atmosferinde hizmet veren otelimiz</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="img/motel.jpg" alt="Motel">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3 data-tr="Doğa ve Tarihin Buluşma Noktası" data-en="Where Nature and History Meet" data-it="Il punto d'incontro tra natura e storia">Doğa ve Tarihin Buluşma Noktası</h3>
+                    <p data-tr="Güneş Motel, 2 km mesafe ile Nemrut Dağı'na en yakın otel olma özelliğine sahiptir. Malatya sınırları içerisinde yer alan motelimiz, Nemrut Dağı'na ulaşımın en kolay ve en hızlı şekilde sağlanabildiği noktada konumlanmıştır. Böylece misafirlerimiz, dünyanın dört bir yanından gelen ziyaretçilerin hayranlıkla izlediği Nemrut'un unutulmaz gün doğumu ve gün batımını zahmetsizce deneyimleyebilir.
+
+1980'lerden bu yana aynı aile tarafından işletilen otelimiz, yalnızca bir konaklama yeri değil; samimiyetin, güvenin ve sıcak bir misafirperverliğin adresidir. Kuşaklar boyunca süregelen bu aile işletmesi kültürü sayesinde misafirlerimizi evlerinde hissettirmeyi bir gelenek haline getirdik.
+
+Güneş Motel'den yola çıkan misafirlerimiz yalnızca Nemrut Dağı'nı değil; Karakuş Tümülüsü, Cendere Köprüsü, Arsemia Ören Yeri, Kahta Kalesi ve Perre Antik Kenti gibi Kommagene medeniyetinin değerli miraslarını da keşfetme imkânı bulur.
+
+Biz, Güneş Motel olarak misafirlerimize tarih, doğa ve kültürün iç içe geçtiği bu coğrafyada unutulmaz bir deneyim yaşatmayı hedefliyoruz. Sizleri hem Anadolu'nun samimi konukseverliğini hem de Nemrut'un büyüleyici atmosferini birlikte hissetmeye davet ediyoruz." 
+                       data-en="Güneş Motel is the closest hotel to Mount Nemrut, at a distance of 2 km. Located within the borders of Malatya, our motel is positioned at the point from which access to Mount Nemrut is the easiest and fastest. In this way, our guests can effortlessly experience Nemrut’s unforgettable sunrise and sunset, admired by visitors from all over the world. Since the 1980s, our hotel has been run by the same family; it is not just a place to stay, but an address of sincerity, trust, and warm hospitality. Thanks to this family-run culture passed down through generations, we have made it a tradition to make our guests feel at home. From Güneş Motel, our guests can discover not only Mount Nemrut but also the valuable heritage of the Kingdom of Commagene, such as the Karakuş Tumulus, the Cendere Bridge, the Arsemia Ruins, Kahta Castle, and the ancient city of Perre. As Güneş Motel, we aim to offer our guests an unforgettable experience in this land where history, nature, and culture intertwine. We invite you to feel both the sincere hospitality of Anatolia and the enchanting atmosphere of Nemrut together." 
+                       data-it="Güneş Motel è l’hotel più vicino al Monte Nemrut, a una distanza di 2 km. Situato entro i confini di Malatya, il nostro motel si trova nel punto da cui l’accesso al Monte Nemrut è più facile e rapido. In questo modo i nostri ospiti possono vivere senza sforzo l’indimenticabile alba e il tramonto di Nemrut, ammirati da visitatori da tutto il mondo. Dal 1980 il nostro hotel è gestito dalla stessa famiglia; non è solo un luogo di soggiorno, ma un indirizzo di sincerità, fiducia e calda ospitalità. Grazie a questa cultura di gestione familiare tramandata di generazione in generazione, abbiamo reso una tradizione far sentire i nostri ospiti come a casa. Partendo dal Güneş Motel, i nostri ospiti possono scoprire non solo il Monte Nemrut, ma anche il prezioso patrimonio del regno di Commagene, come il Tumulo di Karakuş, il Ponte di Cendere, il sito di Arsemia, il Castello di Kahta e l’antica città di Perre. Come Güneş Motel, puntiamo a offrire ai nostri ospiti un’esperienza indimenticabile in questa terra dove storia, natura e cultura si intrecciano. Vi invitiamo a sentire insieme la sincera ospitalità dell’Anatolia e l’affascinante atmosfera di Nemrut.">Güneş Motel, 2 km mesafe ile Nemrut Dağı'na en yakın otel olma özelliğine sahiptir. Malatya sınırları içerisinde yer alan motelimiz, Nemrut Dağı'na ulaşımın en kolay ve en hızlı şekilde sağlanabildiği noktada konumlanmıştır. Böylece misafirlerimiz, dünyanın dört bir yanından gelen ziyaretçilerin hayranlıkla izlediği Nemrut'un unutulmaz gün doğumu ve gün batımını zahmetsizce deneyimleyebilir.
+
+1980'lerden bu yana aynı aile tarafından işletilen otelimiz, yalnızca bir konaklama yeri değil; samimiyetin, güvenin ve sıcak bir misafirperverliğin adresidir. Kuşaklar boyunca süregelen bu aile işletmesi kültürü sayesinde misafirlerimizi evlerinde hissettirmeyi bir gelenek haline getirdik.
+
+Güneş Motel'den yola çıkan misafirlerimiz yalnızca Nemrut Dağı'nı değil; Karakuş Tümülüsü, Cendere Köprüsü, Arsemia Ören Yeri, Kahta Kalesi ve Perre Antik Kenti gibi Kommagene medeniyetinin değerli miraslarını da keşfetme imkânı bulur.
+
+Biz, Güneş Motel olarak misafirlerimize tarih, doğa ve kültürün iç içe geçtiği bu coğrafyada unutulmaz bir deneyim yaşatmayı hedefliyoruz. Sizleri hem Anadolu'nun samimi konukseverliğini hem de Nemrut'un büyüleyici atmosferini birlikte hissetmeye davet ediyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Odalar -->
+    <section id="rooms" class="section rooms-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-tr="Odalarımız" data-en="Our Rooms" data-it="Le Nostre Camere">Odalarımız</h2>
+                <p data-tr="Konforlu ve modern donanımlı odalarımız" data-en="Our comfortable, modernly equipped rooms" data-it="Le nostre camere confortevoli e modernamente attrezzate">Konforlu ve modern donanımlı odalarımız</p>
+            </div>
+            
+            <div class="rooms-grid">
+                <!-- 2 Kişilik Oda -->
+                <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="room-img">
+                        <img src="img/double-room-1.jpg" alt="2 Kişilik Oda">
+                        <div class="room-badge" data-tr="Popüler" data-en="Popular" data-it="Popolare">Popüler</div>
+                    </div>
+                    <div class="room-info">
+                        <h3 data-tr="Standart 2 Kişilik Oda" data-en="Standard Double Room" data-it="Camera doppia standard">Standart 2 Kişilik Oda</h3>
+                        <p data-tr="Rahat ve konforlu oda" data-en="A comfortable and cozy room" data-it="Camera confortevole e accogliente">Rahat ve konforlu oda</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> <span data-tr="2 Kişi" data-en="2 Guests" data-it="2 persone">2 Kişi</span></span>
+                            <span><i class="fas fa-tint"></i> <span data-tr="24s Sıcak Su" data-en="24h Hot Water" data-it="Acqua calda 24h">24s Sıcak Su</span></span>
+                            <span><i class="fas fa-mountain"></i> <span data-tr="Dağ Manzarası" data-en="Mountain View" data-it="Vista montagna">Dağ Manzarası</span></span>
+                            <span><i class="fas fa-coffee"></i> <span data-tr="Çay/Kahve" data-en="Tea/Coffee" data-it="Tè/Caffè">Çay/Kahve</span></span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">€45-65</span>
+                            <span class="period" data-tr="gecelik" data-en="per night" data-it="a notte">gecelik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Çift Kişilik Oda -->
+                <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="room-img">
+                        <img src="img/twin-room-1.JPG" alt="Çift Kişilik Oda">
+                    </div>
+                    <div class="room-info">
+                        <h3 data-tr="Çift Kişilik Oda" data-en="Double Room" data-it="Camera matrimoniale">Çift Kişilik Oda</h3>
+                        <p data-tr="Çiftler için ideal" data-en="Ideal for couples" data-it="Ideale per le coppie">Çiftler için ideal</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> <span data-tr="Çift Yatak" data-en="Double Bed" data-it="Letto matrimoniale">Çift Yatak</span></span>
+                            <span><i class="fas fa-tint"></i> <span data-tr="24s Sıcak Su" data-en="24h Hot Water" data-it="Acqua calda 24h">24s Sıcak Su</span></span>
+                            <span><i class="fas fa-mountain"></i> <span data-tr="Dağ Manzarası" data-en="Mountain View" data-it="Vista montagna">Dağ Manzarası</span></span>
+                            <span><i class="fas fa-coffee"></i> <span data-tr="Çay/Kahve" data-en="Tea/Coffee" data-it="Tè/Caffè">Çay/Kahve</span></span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">€50-70</span>
+                            <span class="period" data-tr="gecelik" data-en="per night" data-it="a notte">gecelik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Kişilik Oda -->
+                <div class="room-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="room-img">
+                        <img src="img/triple-room.JPG" alt="3 Kişilik Oda">
+                    </div>
+                    <div class="room-info">
+                        <h3 data-tr="3 Kişilik Oda" data-en="Triple Room" data-it="Camera tripla">3 Kişilik Oda</h3>
+                        <p data-tr="Arkadaş grupları için ideal" data-en="Ideal for groups of friends" data-it="Ideale per gruppi di amici">Arkadaş grupları için ideal</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-users"></i> <span data-tr="3 Kişi" data-en="3 Guests" data-it="3 persone">3 Kişi</span></span>
+                            <span><i class="fas fa-tint"></i> <span data-tr="24s Sıcak Su" data-en="24h Hot Water" data-it="Acqua calda 24h">24s Sıcak Su</span></span>
+                            <span><i class="fas fa-mountain"></i> <span data-tr="Dağ Manzarası" data-en="Mountain View" data-it="Vista montagna">Dağ Manzarası</span></span>
+                            <span><i class="fas fa-coffee"></i> <span data-tr="Çay/Kahve" data-en="Tea/Coffee" data-it="Tè/Caffè">Çay/Kahve</span></span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">€70-90</span>
+                            <span class="period" data-tr="gecelik" data-en="per night" data-it="a notte">gecelik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 Kişilik Aile Odası -->
+                <div class="room-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="room-img">
+                        <img src="img/room-family.jpg" alt="Aile Odası">
+                        <div class="room-badge" data-tr="Aile Dostu" data-en="Family Friendly" data-it="Per famiglie">Aile Dostu</div>
+                    </div>
+                    <div class="room-info">
+                        <h3 data-tr="5 Kişilik Aile Odası" data-en="5-Person Family Room" data-it="Camera familiare per 5 persone">5 Kişilik Aile Odası</h3>
+                        <p data-tr="Geniş aileler için ideal" data-en="Ideal for large families" data-it="Ideale per famiglie numerose">Geniş aileler için ideal</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-users"></i> <span data-tr="5 Kişi" data-en="5 Guests" data-it="5 persone">5 Kişi</span></span>
+                            <span><i class="fas fa-tint"></i> <span data-tr="24s Sıcak Su" data-en="24h Hot Water" data-it="Acqua calda 24h">24s Sıcak Su</span></span>
+                            <span><i class="fas fa-mountain"></i> <span data-tr="Dağ Manzarası" data-en="Mountain View" data-it="Vista montagna">Dağ Manzarası</span></span>
+                            <span><i class="fas fa-coffee"></i> <span data-tr="Çay/Kahve" data-en="Tea/Coffee" data-it="Tè/Caffè">Çay/Kahve</span></span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">€100-130</span>
+                            <span class="period" data-tr="gecelik" data-en="per night" data-it="a notte">gecelik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-tr="Galeri" data-en="Gallery" data-it="Galleria">Galeri</h2>
+                <p data-tr="Otelimizden ve çevresinden kareler" data-en="Photos from our hotel and surroundings" data-it="Foto dal nostro hotel e dintorni">Otelimizden ve çevresinden kareler</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/gallery-1.JPG" alt="Otel Dış Görünüm">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="1" data-aos="fade-up" data-aos-delay="150">
+                    <img src="img/gallery-2.JPG" alt="Resepsiyon Alanı">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="2" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/gallery-3.JPG" alt="Restoran">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="3" data-aos="fade-up" data-aos-delay="250">
+                    <img src="img/gallery-4.JPG" alt="Nemrut Dağı Manzarası">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="4" data-aos="fade-up" data-aos-delay="300">
+                    <img src="img/gallery-5.JPG" alt="Gün Doğumu">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="5" data-aos="fade-up" data-aos-delay="350">
+                    <img src="img/gallery-6.jpeg" alt="Çevre Manzarası">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Galeri -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="lightbox-content">
+            <img id="lightboxImage" class="lightbox-image" src="" alt="">
+        </div>
+        
+        <div class="lightbox-counter" id="lightboxCounter">
+            1 / 60
+        </div>
+    </div>
+
+    <!-- İletişim -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-tr="İletişim & Rezervasyon" data-en="Contact & Reservation" data-it="Contatto & Prenotazione">İletişim & Rezervasyon</h2>
+                <p data-tr="Bizimle iletişime geçin ve rezervasyon yapın" data-en="Contact us and make a reservation" data-it="Contattaci e effettua una prenotazione">Bizimle iletişime geçin ve rezervasyon yapın</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-tr="Adres" data-en="Address" data-it="Indirizzo">Adres</h4>
+                            <p data-tr="Nemrut Dağı Etekleri, Büyüköz Mahallesi Pütürge/Malatya" data-en="Foothills of Mount Nemrut, Büyüköz Neighborhood, Pütürge/Malatya" data-it="Pendici del Monte Nemrut, Quartiere Büyüköz, Pütürge/Malatya">Nemrut Dağı Etekleri, Büyüköz Mahallesi Pütürge/Malatya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-tr="Telefon" data-en="Phone" data-it="Telefono">Telefon</h4>
+                            <p>+90 543 876 7271</p>
+                            <p>+90 536 287 0639</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-tr="E-posta" data-en="Email" data-it="Email">E-posta</h4>
+                            <p>info@guneshotelnemrut.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-tr="Çalışma Saatleri" data-en="Working Hours" data-it="Orari di lavoro">Çalışma Saatleri</h4>
+                            <p data-tr="7/24 Açık" data-en="Open 24/7" data-it="Aperto 24/7">7/24 Açık</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <h3 data-tr="Rezervasyon Formu" data-en="Reservation Form" data-it="Modulo di prenotazione">Rezervasyon Formu</h3>
+                    <form id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-tr="Giriş Tarihi" data-en="Check-in Date" data-it="Data di arrivo">Giriş Tarihi</label>
+                                <input type="date" id="checkinDate" name="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-tr="Çıkış Tarihi" data-en="Check-out Date" data-it="Data di partenza">Çıkış Tarihi</label>
+                                <input type="date" id="checkoutDate" name="checkOut" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-tr="Oda Tipi" data-en="Room Type" data-it="Tipo di camera">Oda Tipi</label>
+                                <select id="roomType" name="roomType" required>
+                                    <option value="" data-tr="Seçiniz" data-en="Select" data-it="Seleziona">Seçiniz</option>
+                                    <option value="double" data-tr="Standart 2 Kişilik" data-en="Standard Double" data-it="Doppia standard">Standart 2 Kişilik</option>
+                                    <option value="twin" data-tr="Çift Kişilik Oda" data-en="Double Room" data-it="Camera matrimoniale">Çift Kişilik Oda</option>
+                                    <option value="triple" data-tr="3 Kişilik Oda" data-en="Triple Room" data-it="Camera tripla">3 Kişilik Oda</option>
+                                    <option value="family" data-tr="5 Kişilik Aile Odası" data-en="Family Room (5 persons)" data-it="Camera familiare (5 persone)">5 Kişilik Aile Odası</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label data-tr="Kişi Sayısı" data-en="Number of Guests" data-it="Numero di ospiti">Kişi Sayısı</label>
+                                <select id="guestCount" name="guests" required>
+                                    <option value="" data-tr="Seçiniz" data-en="Select" data-it="Seleziona">Seçiniz</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-tr="Ad Soyad" data-en="Full Name" data-it="Nome e cognome">Ad Soyad</label>
+                            <input type="text" id="fullName" name="fullName" required
+                                   data-tr="Adınız ve soyadınız" data-en="Your full name" data-it="Il tuo nome e cognome">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-tr="E-posta" data-en="Email" data-it="Email">E-posta</label>
+                                <input type="email" id="email" name="email" required
+                                       data-tr="E-posta adresiniz" data-en="Your email address" data-it="Il tuo indirizzo email">
+                            </div>
+                            <div class="form-group">
+                                <label data-tr="Telefon" data-en="Phone" data-it="Telefono">Telefon</label>
+                                <input type="tel" id="phone" name="phone" required
+                                       data-tr="Telefon numaranız" data-en="Your phone number" data-it="Il tuo numero di telefono">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-tr="Özel İstekler" data-en="Special Requests" data-it="Richieste speciali">Özel İstekler</label>
+                            <textarea rows="3" id="specialRequests" name="notes"
+                                      data-tr="Özel isteklerinizi yazın..." data-en="Write your special requests..." data-it="Scrivi le tue richieste speciali..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-full"
+                                data-tr="Rezervasyon Talebi Gönder" data-en="Send Reservation Request" data-it="Invia richiesta di prenotazione">
+                            Rezervasyon Talebi Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.123456789!2d38.741234!3d37.985678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU5JzA4LjQiTiAzOMKwNDQnMjguNCJF!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str" 
+                        allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-main">GÜNEŞ HOTEL</span>
+                            <span class="footer-logo-sub" data-tr="Nemrut Dağı" data-en="Mount Nemrut" data-it="Monte Nemrut">Nemrut Dağı</span>
+                        </div>
+                    </div>
+                    <p data-tr="UNESCO Dünya Mirası Nemrut Dağı'na en yakın konaklama tesisi. Tarihi ve doğal güzelliklerin buluştuğu noktada hizmet veriyoruz." data-en="The closest accommodation to Mount Nemrut, a UNESCO World Heritage site. We serve at the meeting point of historical and natural beauties." data-it="La sistemazione più vicina al Monte Nemrut, sito Patrimonio UNESCO. Operiamo nel punto d'incontro tra bellezze storiche e naturali.">UNESCO Dünya Mirası Nemrut Dağı'na en yakın konaklama tesisi. Tarihi ve doğal güzelliklerin buluştuğu noktada hizmet veriyoruz.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-tr="Hızlı Linkler" data-en="Quick Links" data-it="Link Rapidi">Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="#home" data-tr="Ana Sayfa" data-en="Home" data-it="Home">Ana Sayfa</a></li>
+                        <li><a href="#about" data-tr="Hakkımızda" data-en="About Us" data-it="Chi Siamo">Hakkımızda</a></li>
+                        <li><a href="#rooms" data-tr="Odalar" data-en="Rooms" data-it="Camere">Odalar</a></li>
+                        <li><a href="#gallery" data-tr="Galeri" data-en="Gallery" data-it="Galleria">Galeri</a></li>
+                        <li><a href="#contact" data-tr="İletişim" data-en="Contact" data-it="Contatto">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-tr="Hizmetlerimiz" data-en="Our Services" data-it="I Nostri Servizi">Hizmetlerimiz</h3>
+                    <ul>
+                        <li><span data-tr="Nemrut Turu" data-en="Nemrut Tour" data-it="Tour del Nemrut">Nemrut Turu</span></li>
+                        <li><span data-tr="Gün Doğumu Turu" data-en="Sunrise Tour" data-it="Tour dell'alba">Gün Doğumu Turu</span></li>
+                        <li><span data-tr="Havaalanı Transferi" data-en="Airport Transfer" data-it="Transfer aeroportuale">Havaalanı Transferi</span></li>
+                        <li><span data-tr="Rehberli Turlar" data-en="Guided Tours" data-it="Tour guidati">Rehberli Turlar</span></li>
+                        <li><span data-tr="Yerel Lezzetler" data-en="Local Cuisine" data-it="Cucina locale">Yerel Lezzetler</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-tr="İletişim Bilgileri" data-en="Contact Info" data-it="Info Contatto">İletişim Bilgileri</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-tr="Nemrut Dağı Etekleri, Büyüköz Mahallesi Pütürge/Malatya" data-en="Foothills of Mount Nemrut, Büyüköz Neighborhood, Pütürge/Malatya" data-it="Pendici del Monte Nemrut, Quartiere Büyüköz, Pütürge/Malatya">Nemrut Dağı Etekleri, Büyüköz Mahallesi Pütürge/Malatya</span></p>
+                        <p><i class="fas fa-phone"></i> +90 543 876 7271</p>
+                        <p><i class="fas fa-phone"></i> +90 536 287 0639</p>
+                        <p><i class="fas fa-envelope"></i> info@guneshotelnemrut.com</p>
+                        <p><i class="fas fa-clock"></i> <span data-tr="7/24 Hizmet" data-en="24/7 Service" data-it="Servizio 24/7">7/24 Hizmet</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-tr="© 2024 Güneş Hotel. Tüm hakları saklıdır." data-en="© 2024 Güneş Hotel. All rights reserved." data-it="© 2024 Güneş Hotel. Tutti i diritti riservati.">© 2024 Güneş Hotel. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Preloader -->
+    <div id="loading" class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
